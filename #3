@@ -1,0 +1,41 @@
+import random
+import math
+Input_symbol = input('Выберите действие (+/-/*/:/^/RAN/MOD/!/acos): ')
+if Input_symbol == 'RAN':
+    Result_Random = (random.random())
+    print ('Ответ: ', Result_Random)
+if Input_symbol == 'MOD':
+    F_number1 = float(input('Введите число: '))
+    Result_Module = abs(F_number1) 
+    print ('Ответ: ', Result_Module)
+if Input_symbol == '!':
+    F_number2 = int(input('Введите натуральное число: '))
+    c = 1 
+    for i in range (2,F_number2 + 1):
+        c *= i 
+        print ('Ответ: ', c)
+if Input_symbol == 'acos':
+    F_number1 = float(input('Введите число Х в промежутке в промежутке [-1;1]: '))
+    c = math.acos(F_number1)
+    print ('Ответ: ', c)
+    quit()
+
+F_number = float(input('Введите первое число: '))
+S_number = float(input('Введите второе число: '))
+Result_P = F_number + S_number
+Result_M = F_number - S_number
+Result_Mult = F_number * S_number
+Result_Div = F_number / S_number
+Result_Degree = pow (F_number,S_number)
+if Input_symbol == '-':
+ print('Ответ: ', Result_P)
+elif Input_symbol == '+':
+ print('Ответ: ', Result_M)
+elif Input_symbol == '*':
+ print('Ответ: ', Result_Mult)
+elif Input_symbol == ':': 
+ print('Ответ: ', Result_Div)
+elif Input_symbol == '^':
+ print('Ответ: ', Result_Degree)
+else:
+ print('Ошибка! Попробуйте еще раз.
