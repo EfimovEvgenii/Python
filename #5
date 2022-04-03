@@ -1,0 +1,19 @@
+Words = input('Введите слова: ')
+Res = Words.split()
+print(Res)
+print("Слов в списке:" , len(Res))
+Q = input("Формируем второй список с количеством символов, равному количеству введенных слов?: ")
+if Q == "да" or Q == "Да" or Q == "ДА":
+    print('Введите ',len(Res),' символа(-ов): ')
+    Symbols = input()
+    Res1 = Symbols.split()
+    if (len(Res1)) != (len(Res)):
+        print('Вы ввели недопустимое количество символов.')
+        exit()
+    else: dictionary = dict(zip(Res, Res1))
+    print(dictionary)
+
+elif Q == "Нет" or Q == "нет" or Q == "НЕТ":
+    print("Второй список не был сформирован.")
+else:print("Неверный ввод.")
+print("Программа завершила свою работу.")
