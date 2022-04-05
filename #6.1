@@ -1,0 +1,73 @@
+import random
+import math
+Input_symbol = input('Выберите действие (+/-/*/:/^/RAN/MOD/!/acos): ')
+
+if Input_symbol == 'RAN':
+    Result_Random = (random.random())
+    print ('Ответ: ', Result_Random)
+    quit()
+
+if Input_symbol == 'MOD':
+    F_number1 = float(input('Введите число: '))
+    def MOD(F_number1):
+        Result_Module = abs(F_number1)
+        return Result_Module
+    res = MOD(F_number1)
+    print ('Ответ: ', res )
+    quit()
+
+if Input_symbol == '!':
+    F_number2 = int(input('Введите натуральное число: '))
+    def factorial(F_number2):
+        if F_number2 == 0:
+            return 1
+        else:
+           return F_number2 * factorial(F_number2 - 1)
+    res = factorial(F_number2)
+    print ('Ответ: ', res )
+    quit()
+
+if Input_symbol == 'acos':
+    F_number1 = float(input('Введите число Х в промежутке в промежутке [-1;1]: '))
+    def arccos(F_number1):
+        Result_ac = math.acos(F_number1)
+        return Result_ac
+    res = arccos(F_number1)
+    print ('Ответ: ', res)
+    quit()
+
+F_number = float(input('Введите первое число: '))
+S_number = float(input('Введите второе число: '))
+def summa(F_number, S_number):
+    Result_P = F_number + S_number
+    return Result_P
+def raznost(F_number, S_number):
+    Result_M = F_number - S_number
+    return Result_M
+def umnojenie(F_number, S_number):
+    Result_Mult = F_number * S_number
+    return Result_Mult
+def delenie(F_number, S_number):
+    Result_Div = F_number / S_number
+    return Result_Div
+def stepen(F_number, S_number):
+    Result_Degree = pow (F_number,S_number)
+    return Result_Degree
+    
+if Input_symbol == '-':
+    res = raznost(F_number, S_number)
+    print('Ответ: ', res)
+elif Input_symbol == '+':
+    res = summa(F_number, S_number)
+    print('Ответ: ',res)
+elif Input_symbol == '*':
+    res = umnojenie(F_number, S_number)
+    print('Ответ: ',res)
+elif Input_symbol == ':':
+    res = delenie(F_number, S_number)
+    print('Ответ: ', res)
+elif Input_symbol == '^':
+    res = stepen(F_number, S_number)
+    print('Ответ: ', res)
+else:
+    print('Ошибка. ')
