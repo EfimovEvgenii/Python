@@ -4,16 +4,17 @@ Input_symbol = input('Выберите действие (+/-/*/:/^/RAN/MOD/!/aco
 if Input_symbol == 'RAN':
     Result_Random = (random.random())
     print ('Ответ: ', Result_Random)
+    quit()
 if Input_symbol == 'MOD':
     F_number1 = float(input('Введите число: '))
     Result_Module = abs(F_number1) 
     print ('Ответ: ', Result_Module)
+    quit()
 if Input_symbol == '!':
     F_number2 = int(input('Введите натуральное число: '))
-    c = 1 
-    for i in range (2,F_number2 + 1):
-        c *= i 
-        print ('Ответ: ', c)
+    Result_Fact = math.factorial(F_number2)
+    print ('Ответ: ', Result_Fact)
+    quit()
 if Input_symbol == 'acos':
     F_number1 = float(input('Введите число Х в промежутке в промежутке [-1;1]: '))
     c = math.acos(F_number1)
@@ -38,4 +39,4 @@ elif Input_symbol == ':':
 elif Input_symbol == '^':
  print('Ответ: ', Result_Degree)
 else:
- print('Ошибка! Попробуйте еще раз.
+ print('Ошибка! Попробуйте еще раз')
