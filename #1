@@ -1,0 +1,8 @@
+My_Number = int(input("Введите произвольное число: "))
+Border_Number = int(input("Введите пограничное число:"  ))
+if My_Number < Border_Number:
+    print("Ваше число меньше пограничного числа.")
+elif My_Number >= 3 * Border_Number: 
+    print ("Ваше число больше пограничного числа в 3 или более раз.")
+elif My_Number > Border_Number:
+    print ("Ваше число больше пограничного числа.")
