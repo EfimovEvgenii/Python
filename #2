@@ -1,22 +1,17 @@
 random_string = str(input('Введите текст: '))
 for i in random_string:
     print ('Буква:  '+i)
-    
-    
+        
 res_string = random_string [:2] + random_string [3:]
 print ('Исключаем третий символ: ' + res_string)
-
-
 
 if 'C' in random_string or 'c' in random_string:
     print ('Есть буква C')
 else:
     print ('Нет буквы C')
     
-
 print ('Символов:' ,len(random_string))
-
 
 l = (len(random_string))
 a = random_string [:l-1]
-print ('Исключаем последний символ: ', 
+print ('Исключаем последний символ: ', a )
