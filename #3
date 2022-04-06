@@ -28,9 +28,9 @@ Result_M = F_number - S_number
 Result_Mult = F_number * S_number
 Result_Div = F_number / S_number
 Result_Degree = pow (F_number,S_number)
-if Input_symbol == '-':
+if Input_symbol == '+':
  print('Ответ: ', Result_P)
-elif Input_symbol == '+':
+elif Input_symbol == '-':
  print('Ответ: ', Result_M)
 elif Input_symbol == '*':
  print('Ответ: ', Result_Mult)
