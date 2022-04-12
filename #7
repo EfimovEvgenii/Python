@@ -34,7 +34,7 @@ class Calculator:
 while True:
     Input_symbol = input('Выберите действие (+/-/*/:/^/RAN/MOD/!/acos): ')
     
-    if Input_symbol in ('+', '-', '*', '/', '^', ':'):
+    if Input_symbol in ('+', '-', '*', '^', ':'):
             calc = Calculator()
             calc.standart(Input_symbol)
     if Input_symbol in ("MOD", "!", "acos"):
